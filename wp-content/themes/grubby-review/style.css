@@ -1,9 +1,24 @@
 /*
 Theme Name: Grubby Reviews App
 */
+@font-face {
+    font-family: 'motorwayregular';
+    src: url('inc/fonts/motorway-webfont.eot');
+    src: url('inc/fonts/motorway-webfont.eot?#iefix') format('embedded-opentype'),
+         url('inc/fonts/motorway-webfont.woff2') format('woff2'),
+         url('inc/fonts/motorway-webfont.woff') format('woff'),
+         url('inc/fonts/motorway-webfont.ttf') format('truetype'),
+         url('inc/fonts/motorway-webfont.svg#motorwayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 *,:before,:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+::-webkit-input-placeholder{opacity:1}
+:-moz-placeholder{opacity:1}
+::-moz-placeholder{opacity:1}
+:-ms-input-placeholder{opacity:1}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{;border:0;margin:0;padding:0;vertical-align:baseline}
 body{line-height:1;background:rgba(0, 0, 0, 0) url("images/main-bg.png") no-repeat scroll 0 0 / cover;font-family: "Myriad Pro", sans-serif;}
 h1,h2,h3,h4,h5,h6{clear:both;font-weight:400}
@@ -36,7 +51,10 @@ a img{border:none}
   width: 50%;
 }
 .hero-banner {
+  background: rgba(0, 0, 0, 0) url("images/hero-banner.png") no-repeat scroll center top / cover ;
+  height: 77vh;
   position: relative;
+  width: 100vw;
 }
 .hero-banner > img {
   height: auto;
@@ -56,6 +74,7 @@ a img{border:none}
 .cta h1 {
   font-size: 34px;
   text-shadow: 0 0 5px #000;
+  font-family: 
 }
 
 .content-wrap {
@@ -69,6 +88,7 @@ a img{border:none}
   background: #231f20 none repeat scroll 0 0;
   color: #fff;
   display: inline-block;
+  font-family: "motorway";
   font-size: 36px;
   padding: 10px 20px 5px;
 }
@@ -133,7 +153,134 @@ a img{border:none}
   text-align: center;
 }
 
+	/* Begin Star Rating CSS */
+ul.gfield_radio{margin:0!important;padding:0}
+.stars li{display:inline-block;float:left}
+.stars{background:url(images/stars_leadpop.png) repeat-x scroll 0 -4px rgba(0,0,0,0);margin:10px auto;width:320px}
+.stars input[type="radio"]{position:absolute;opacity:0;filter:alpha(opacity=0)}
+.stars input[type="radio"].star-5:checked ~ span{width:100%}
+.stars input[type="radio"].star-4:checked ~ span{width:80%}
+.stars input[type="radio"].star-3:checked ~ span{width:60%}
+.stars input[type="radio"].star-2:checked ~ span{width:40%}
+.stars input[type="radio"].star-1:checked ~ span{width:20%}
+.stars label {
+  background: transparent none repeat scroll 0 0 !important;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 64px;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  text-indent: -999em;
+  width: 64px;
+  z-index: 10;
+}.stars label:hover ~ span{background-position:0 -64px}
+.stars label.star-5:hover ~ span{width:100%!important}
+.stars label.star-4:hover ~ span{width:80%!important}
+.stars label.star-3:hover ~ span{width:60%!important}
+.stars label.star-2:hover ~ span{width:40%!important}
+.stars label.star-1:hover ~ span{width:20%!important}
+.stars span{display:block;width:0;position:relative;top:0;left:0;height:62px;background:url(images/stars_leadpop.png) repeat-x 0 -64px;-webkit-transition:-webkit-width .5s;-moz-transition:-moz-width .5s;-ms-transition:-ms-width .5s;-o-transition:-o-width .5s;transition:width .5s}
+/* END Star Rating CSS */
 
+.social-icon {
+  background-size: contain !important;
+  display: block;
+  float: left;
+  height: 53px;
+  margin: 1%;
+  width: 30.333%;
+}
+.social-icon.facebook {background: url("images/icon-facebook.png") no-repeat}
+.social-icon.google {background: url("images/icon-google.png") no-repeat}
+.social-icon.yelp {background: url("images/icon-yelp.png") no-repeat}
 
+/* Gravity Forms Reset V2 COMPRESSED */
+.gform_wrapper {
+  margin-top: 20px;
+}
+.gform_wrapper li.gfield.gfield_error{background-color:transparent!important;border:medium none!important;padding:0!important}
+.gform_wrapper .top_label .gfield_description.validation_message,.gform_wrapper .gfield_description.validation_message{font-size:12px;margin-top:-11px!important;position:absolute!important;padding:10px 0!important}
+div#duplicateEmail{color:#C62626;font-size:10px;margin-left:0!important;margin-top:-7px!important;position:absolute!important;padding:10px 0!important}
+.gform_wrapper .validation_error{color:#790000;font-size:11px;font-weight:bold;line-height:1.5em;margin-bottom:0!important}
+#gforms_confirmation_message{background-color:transparent!important;border:medium none!important;margin:0!important;padding:0!important}
+div.validation_error{display:none}
+li{list-style:none;margin-bottom:15px}
+ul{margin:0;padding:0}
+li.gf_left_half{float:left!important}
+li.gf_right_half{float:right!important;clear:none!important}
+.gform_wrapper ul li.gfield{clear:both}
+select,input{width:100%}
+input, select, option, textarea {
+  box-sizing: border-box;
+  font-family: open sans;
+  font-size: 15px;
+  width: 100%;
+}
+input[type="radio"] {width: 10px}
+textarea {
+  height: 80px;
+}
+div.ginput_complex span.ginput_full input{width:100%}
+input[type=checkbox]{float:left;width:15px;height:15px}
 
-
+.review-module {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.gfield_label {
+  display: none;
+}
+.gform_button.button {
+  background: #fca300 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 10px;
+  color: #fff;
+  display: inline;
+  font-size: 20px;
+  height: 38px;
+  width: 115px;
+}
+.gform_confirmation_message {
+  background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+  font-size: 28px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.review-sites .cta {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 525px) {
+	.review-wrap .left {
+  float: none;
+  vertical-align: middle;
+  width: 100%;
+}
+.review-wrap .right {
+  float: none;
+  vertical-align: middle;
+  width: 100%;
+}
+.back-link {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+.logo {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.featured-box {
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+.featured-box > img {
+  height: auto;
+  width: 100%;
+}
+}
