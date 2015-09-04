@@ -1,0 +1,139 @@
+/*
+Theme Name: Grubby Reviews App
+*/
+
+*,:before,:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{;border:0;margin:0;padding:0;vertical-align:baseline}
+body{line-height:1;background:rgba(0, 0, 0, 0) url("images/main-bg.png") no-repeat scroll 0 0 / cover;font-family: "Myriad Pro", sans-serif;}
+h1,h2,h3,h4,h5,h6{clear:both;font-weight:400}
+ol,ul{list-style:none}
+blockquote{quotes:none}
+blockquote:before,blockquote:after{content:'';content:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+a img{border:none}
+
+
+.header-wrap {
+  background: #231f20 none repeat scroll 0 0;
+  padding: 15px 0;
+}
+.header-wrap .inner-wrap {width: 100%;display: table;}
+.inner-wrap {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.logo {
+  display: table-cell;
+  text-align: left;
+  width: 50%;
+}
+.back-link {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  width: 50%;
+}
+.hero-banner {
+  position: relative;
+}
+.hero-banner > img {
+  height: auto;
+  width: 100%;
+}
+
+.vertically-align {
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cta {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+.cta h1 {
+  font-size: 34px;
+  text-shadow: 0 0 5px #000;
+}
+
+.content-wrap {
+  margin: 40px 0 0;
+}
+.content-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.content-title > span {
+  background: #231f20 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  padding: 10px 20px 5px;
+}
+.review-wrap {
+  margin: 0 auto 20px;
+  max-width: 90%;
+}
+.review-wrap .left {
+  float: left;
+  vertical-align: middle;
+  width: 50%;
+}
+.review-wrap .right {width: 50%;float:left}
+.review-image {
+  display: table-cell;
+  width: 25%;
+}
+.review-name-wrap {
+  color: #fff;
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  width: 75%;
+}
+.review-name-wrap span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.review-content {
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+.review-content p {
+  font-size: 19px;
+  line-height: 1.2em;
+  text-shadow: 0 0 3px #000;
+}
+.featured-wrap {
+	background: #231f20;
+}
+.featured-title {
+  padding: 40px 0;
+  text-align: center;
+}
+.featured-box {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+.featured-box > span {
+  color: #fff;
+}
+.featured-image-wrap {
+  padding-bottom: 50px;
+}
+.footer {
+  color: #fff;
+  font-size: 26px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+
+
+
+
